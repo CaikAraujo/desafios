@@ -23,6 +23,7 @@ main{
     background-color: white;
     max-width: 700px;
     border-radius: 10px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.404);
     
 }
 
