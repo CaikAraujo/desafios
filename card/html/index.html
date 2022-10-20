@@ -13,31 +13,34 @@
         <div id="left">
             <img id="background" src="../images/bg-main-desktop.png" alt="background">
             <div id="card">
-                <img id="frontcard" src="../images/bg-card-front.png" alt="front-card">
-                <img id="backcard" src="../images/bg-card-back.png" alt="back-card">
+                <picture>
+
+                    <img id="frontcard" src="../images/bg-card-front.png" alt="front-card">
+                    <img id="backcard" src="../images/bg-card-back.png" alt="back-card">
+                </picture>
+
             </div>
 
             <div id="right">
                 <form>
                     <label for="nome">CARDHOLDER NAME</label>
-                    <input type="text" name="nome" id="nome" placeholder="e.g. Caik Araujo">
-                    <span>Digite o nome impresso no cartão</span>
+                    <input type="text" name="nome" id="nome" placeholder="e.g. Developed by CaikAraujo">
                     
                     <label for="cardnumber">CARD NUMBER</label>
                     <input type="tel" name="cardnumber" id="cardnumber" placeholder="e.g. 1234 5678 9123 0000">
-                    <span>insira o número do cartão</span>
+                    <span id="errocard">Wrong format, numbers only</span>
                     
                     <div> 
                         
-                        <div id="data"><label for="month">EXP. DATE (MM/YY)</label></div>
+                        <div id="data"><label for="month">EXP. DATE (MM/YY)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CVC</label></div>
                         <input type="tel" name="month" id="month" placeholder="MM">
                         <input type="tel" name="year" id="year" placeholder="YY">
-                        <span>Insira a data de validade</span>
-                        <label id="cv" for="cvv">CVC</label>
+                        <span id="down">Can't be blank</span>
+                        
                         <input type="tel" name="cvv" id="cvv" placeholder="e.g. 123">
+                        <span id="blank">Can't be blank</span>
                     </div>
 
-                    <span>Insira um cvc</span>
                        
                     <button>Confirm</button>
                 </form>
