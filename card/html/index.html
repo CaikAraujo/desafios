@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div id="left">
+            <img id="background" src="../images/bg-main-desktop.png" alt="background">
+            <div id="card">
+                <img id="frontcard" src="../images/bg-card-front.png" alt="front-card">
+                <img id="backcard" src="../images/bg-card-back.png" alt="back-card">
+            </div>
+
+            <div id="right">
+                <form>
+                    <label for="nome">CARDHOLDER NAME</label>
+                    <input type="text" name="nome" id="nome" placeholder="e.g. Caik Araujo">
+                    <span>Digite o nome impresso no cartão</span>
+                    
+                    <label for="cardnumber">CARD NUMBER</label>
+                    <input type="tel" name="cardnumber" id="cardnumber" placeholder="e.g. 1234 5678 9123 0000">
+                    <span>insira o número do cartão</span>
+                    
+                    <div> 
+                        
+                        <div id="data"><label for="month">EXP. DATE (MM/YY)</label></div>
+                        <input type="tel" name="month" id="month" placeholder="MM">
+                        <input type="tel" name="year" id="year" placeholder="YY">
+                        <span>Insira a data de validade</span>
+                        <label id="cv" for="cvv">CVC</label>
+                        <input type="tel" name="cvv" id="cvv" placeholder="e.g. 123">
+                    </div>
+
+                    <span>Insira um cvc</span>
+                       
+                    <button>Confirm</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="../javascript/script.js"></script>
+
+</html>
