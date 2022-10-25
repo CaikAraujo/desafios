@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.foto{
+    max-width: 420px;
+    border-radius: 15px 15px 0px 0px;
+    margin-right: 100px;
+}
+
+.cont{
+    max-width: 420px;
+    height: 655px;
+    background-color: white;
+    border-radius: 15px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 40px;
+    color: hsl(223, 47%, 23%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+}
+
+.cont > p{
+    padding:20px 50px;
+    text-align: center;
+    color:  hsl(224, 23%, 55%);
+    font-size: 17px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+}
+
+div.pay{
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    max-width: 350px;
+    border-radius: 15px;
+    margin-left: 35px;
+    margin-bottom: 25px;
+    height: 90px;
+}
+
+
+.icon{
+    width:45px ;
+    height:45px ;
+    padding: 23px 20px 20px 20px;
+}
+
+.pay > p{
+    justify-content: center;
+    padding-right: 95px;
+    margin-top: 23px;
+    line-height: 24px;
+    text-align-last: center;
+    font-family: 'Red Hat Display', sans-serif;
+    color:hsl(224, 23%, 55%); 
+}
+
+strong{
+    color: hsl(223, 47%, 23%);
+}
+
+a{
+    padding-top: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+a:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.781);
+}
+
+button{
+    width: 320px;
+    padding: 12px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: hsl(245, 75%, 52%);
+    font-family:'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 16px 20px rgba(0, 0, 0, 0.167);
+}
+button:hover{
+    background-color: hsla(245, 75%, 52%, 0.777);
+}
+
+p > a{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-size: 15px;
+}
+
+p > a:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+aside{
+    text-align: center;
+
+}
+
+aside > a{
+    color: blue;
+}
+
+
+
+
