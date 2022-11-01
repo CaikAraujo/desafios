@@ -9,6 +9,7 @@ body{
     background-image: url(../images/bg-header-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 400px;
     margin: auto;
 }
 
