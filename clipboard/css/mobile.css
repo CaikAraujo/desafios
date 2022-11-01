@@ -64,6 +64,7 @@
         display: flex;
         background-color: rgba(211, 211, 211, 0.593);
         height: 500px;
+        width: 100vw;
         margin-top: 130px;
     
     }
