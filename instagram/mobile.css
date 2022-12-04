@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+.logo img{
+    display: block;
+    margin: auto;
+    padding: 1.5rem 0rem 1.2rem 0rem;
+}
+
+.inputs{
+    text-align: center;
+    position: relative;
+}
+
+.login{
+    padding-bottom: .4rem;
+    position: relative;
+}
+
+.senha{
+    padding-bottom: .7rem;
+    position: relative;
+}
+
+.login input , .senha input{
+    background-color: #FAFAFA;
+    width: 16rem;
+    padding: .7rem;
+    padding-top: 1.2rem ;
+    padding-bottom: .2rem;
+    padding-left: .4rem;
+    border-radius: 3px;
+    border: solid 1.3px #c9c8c8;
+    font-size: 12px;
+    transition: .5s;
+}
+
+label{
+    position: absolute;
+    left: 75px;
+    bottom: 18px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.708);
+    transition: .5s ease-in-out;
+}
+
+.login #username:focus{
+    border: 2px solid rgba(102, 101, 101, 0.74);
+    outline: none;
+}
+.senha input:focus{
+    border: 2px solid rgba(102, 101, 101, 0.74);
+    outline: none;
+}
+
+div.login input:focus ~ label,
+div.login input:valid ~ label {
+    transform: translateY(-10px);
+    font-size: 12px;
+}
+
+div.senha input:focus ~ label,
+div.senha input:valid ~ label {
+    transform: translateY(-14px);
+    font-size: 12px;
+}
+
+.btn button{
+    width: 16.1rem;
+    padding: .4rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0095F6;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn button:disabled{
+    cursor: default;
+    background-color: #B2DFFC;
+}
+
+
+
+
+
+.divisao{
+    display: flex;
+    padding-top: 1.3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.divisao p{
+    color: rgba(0, 0, 0, 0.442);
+    font-weight: 500;
+    font-size: 14.2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.linha{
+    border-bottom: solid 1px rgba(0, 0, 0, 0.171);
+    width: 6.2rem;
+}
+
+.content{
+    padding-top: 2rem;
+}
+
+.formas-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formas-login span{
+    padding-left: .5rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.formas-login span a{
+    text-decoration: none;
+    color: #385195;
+}
+
+.forget{
+    text-align: center;
+    padding-top: 1.3rem;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.forget a{
+    text-decoration: none;
+    color: #273968;
+}
+
+.cadastro{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 4.5rem;
+}
+
+.cadastro a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #43a5cf;
+}
+
+.obt-app{
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 14px;
+}
+
+.download{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+footer{
+    height: 100vh;
+}
+
+.sessoes{
+    padding: 1rem .7rem;
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+.sessoes span{
+    color: rgba(0, 0, 0, 0.459);
+    padding-right: .95rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+
+.sessoes span a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.459);
+}
+
+.final{
+    text-align: center;
+    padding-top: .3rem;
+}
+
+.final span{
+    color: rgba(0, 0, 0, 0.459);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.lang{
+    padding-right: .485rem;
+}
+.diret{
+    padding-left: .485rem;
+}
+
+
+
+
+
+
+/* alteração*/
+
+.formas-login img{
+    width: 4.3vw;
+}
+
+
+.googleplay{
+    width: 36vw; 
+    padding-right: .5rem;
+}
+
+.microsoft{
+    width: 28vw;
+}
+
+.iphone{
+    display: none;
+}
+
+.screen-shots{
+    display: none;
+}
+

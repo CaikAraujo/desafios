@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="style.css">
+    
+   
+    <!--FavIcon-->
+    <link data-default-icon="https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png" rel="icon" sizes="192x192" href="https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png">
+</head>
+<body>
+    <main>
+        <div class="tudo">
+            <div class="iphone">
+                <img src="iphone.png" alt="Iphone">
+                <div class="screen-shots">
+                
+                        <img src="images/pic3.png" alt="pic3">
+                    
+            
+                 </div>
+            </div>
+            <div class="caixa-formulario">
+                <div class="box-one">
+                    <div class="logo">
+                        <img src="images/Instagram-Logo.png" alt="Instagram-Logo" style="width: 10.875rem; ">
+                    </div>
+            
+                        <div class="inputs">
+                            <div class="login">
+                                <input class="input" type="text" name="username" id="username" autocomplete="off" required onchange="toggleButton()">
+                                <label for="username">Telefone, nome de usuário ou email</label>
+                            </div>
+                            <div class="senha">
+                                <input class="input" type="password" name="password" id="password" required onchange="toggleButton()">
+                                <label for="password">Senha</label>
+                            </div>
+                            <div class="btn">
+                                <button type="submit" id="entrar" disabled>Entrar</button>
+                            </div>
+                        </div>
+                        <div class="divisao">
+                            <div class="linha"></div>
+                            <p>OU</p>
+                            <div class="linha"></div>
+                        </div>
+                        <div class="content">
+                            <div class="formas-login">
+                                <img src="images/facebook.png" alt="facebook-logo">
+                                <span><a href="#">Entrar com o Facebook</a></span>
+                            </div>
+                            <div class="forget">
+                                <span><a href="#">Esqueceu a senha?</a></span>
+                            </div>
+                </div>
+            
+                    <div class="cadastro">
+                        <span>Não tem uma conta? <a href="#">Cadastre-se</a></span>
+                    </div>
+                    <div class="obt-app">
+                        <span>Obtenha o aplicativo.</span>
+                    </div>
+                    <div class="download">
+                        <a href="#"><img class="googleplay" alt="Baixar no Google Play" src="https://static.cdninstagram.com/rsrc.php/v3/y_/r/tUzYKZ-xrQK.png"></a>
+                        <a href="#"><img class="microsoft" alt="Baixar na Microsoft" src="https://static.cdninstagram.com/rsrc.php/v3/yE/r/QQnPXT5YsC4.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="sessoes">
+            <span><a href="#">Meta</a></span>
+            <span><a href="#">Sobre</a></span>
+            <span><a href="#">Blog</a></span>
+            <span><a href="#">Carreiras</a></span>
+            <span><a href="#">Ajuda</a></span>
+            <span><a href="#">API</a></span>
+            <span><a href="#">Privacidade</a></span>
+            <span><a href="#">Termos</a></span>
+            <span><a href="#">Principais contas</a></span>
+            <span><a href="#">Hashtags</a></span>
+            <span><a href="#">Localizações</a></span>
+            <span><a href="#">Instagram Lite</a></span>
+            <span><a href="#">Carregamento de contatos e não usuário</a></span>
+        </div>
+        <div class="final">
+            <span class="lang">Português (Brasil)</span>
+            <span class="diret">&#169 2022 Instagram from Meta </span>
+        </div>
+    </footer>
+
+
+<script>
+
+function toggleButton(){
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if(username && password){
+            document.getElementById('entrar').disabled = false
+            return
+        }
+
+        document.getElementById('entrar').disabled = true
+
+    }
+
+</script>
+</body>
+</html>
