@@ -5,50 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
+        <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
+    
+        <!--FavIcon-->    
     <link rel="shortcut icon" href="../images/favicon-32x32.png" type="image/x-icon">
+
 </head>
 <body>
-    <main>
-        <div id="left">
-            <img id="background" src="../images/bg-main-desktop.png" alt="background">
-            <div id="card">
-                <picture>
-
-                    <img id="frontcard" src="../images/bg-card-front.png" alt="front-card">
-                    <img id="backcard" src="../images/bg-card-back.png" alt="back-card">
-                </picture>
-
+        <div class="card-background">
+            <img class="fundo" src="../images/bg-main-desktop.png" alt="BackGround">
+            <div class="front-card">
+                <img src="../images/bg-card-front.png" alt="Frente-Cartão">
+                <img class="logo-cartao" src="../images/card-logo.svg" alt="Logo-Cartão">
+                <div class="conteudo">
+                    <span class="numero-cartao">0000 0000 0000 0000</span>
+                    <span class="nome-cartao">Caik Araujo</span>
+                    <span class="validade">MM/YY</span>
+                </div>
             </div>
-
-            <div id="right">
-                <form>
-                    <label for="nome">CARDHOLDER NAME</label>
-                    <input type="text" name="nome" id="nome" placeholder="e.g. Developed by CaikAraujo">
-                    
-                    <label for="cardnumber">CARD NUMBER</label>
-                    <input type="tel" name="cardnumber" id="cardnumber" placeholder="e.g. 1234 5678 9123 0000">
-                    <span id="errocard">Wrong format, numbers only</span>
-                    
-                    <div> 
-                        
-                        <div id="data"><label for="month">EXP. DATE (MM/YY)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CVC</label></div>
-                        <input type="tel" name="month" id="month" placeholder="MM">
-                        <input type="tel" name="year" id="year" placeholder="YY">
-                        <span id="down">Can't be blank</span>
-                        
-                        <input type="tel" name="cvv" id="cvv" placeholder="e.g. 123">
-                        <span id="blank">Can't be blank</span>
-                    </div>
-
-                       
-                    <button>Confirm</button>
-                </form>
+            <div class="back-card">
+                <img src="../images/bg-card-back.png" alt="Verso-Cartão">
+                <div class="cod">
+                    <span class="cvc1">123</span>
+                </div>
             </div>
         </div>
-    </main>
+        <div class="formulario">
+            <form action="#">
+                <div class="inputs">
+                    <label class="name" for="name">Proprietario do Cartão</label>
+                    <input type="text" name="name" id="name" autocomplete="off" required placeholder="Caik Araujo" onchange="toggleButton()">
+                </div>
+                <div class="inputs">
+                    <label class="number" for="number">Número do Cartão</label>
+                    <input type="text" name="number" id="number" autocomplete="off" required placeholder="0000 0000 0000 0000" onchange="toggleButton()" maxlength="16">
+                </div>
+                <div class="facts">
+                    <div class="data">
+                        <label class="label-date" for="date">EXP. Data(MM/YY)</label>
+                        <input type="text" name="date" id="date" autocomplete="none" required placeholder="MM" onchange="toggleButton()" maxlength="2">
+                        <input type="text" name="date" id="date" autocomplete="none" required placeholder="YY" onchange="toggleButton()" maxlength="2">
+                    </div>
+                    <div class="cvc">
+                        <label class="label-cvc" for="cvc2">CVC</label>
+                        <input type="text" name="cvc" id="cvc2" autocomplete="none" required placeholder="e.g. 123" onchange="toggleButton()" maxlength="3">
+                    </div>
+                </div>
+                <div class="btn">
+                    <button id="confirmar" disabled>Confirmar</button>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+        <script>
+            function toggleButton(){
+                const nome = document.querySelector('#name').value;
+                const numero = document.querySelector('#number').value;
+                const data = document.querySelector('#date').value;
+                const cvc = document.querySelector('#cvc2').value;
+
+                if(nome && numero && data && cvc){
+                    document.querySelector('#confirmar').disabled = false;
+                    return
+                }
+
+                document.querySelector('#confirmar').disabled = true;
+            }
+        </script>
 </body>
-
-<script src="../javascript/script.js"></script>
-
 </html>
