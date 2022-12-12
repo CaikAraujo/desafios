@@ -34,12 +34,12 @@ div.images{
 @keyframes slide{
     0% {transform: translateX(0);}
     25% {transform: translateX(0);}
-    30% {transform: translateX(-110%);}
-    50% {transform: translateX(-110%);}
-    55% {transform: translateX(-225%);}
-    75% {transform: translateX(-225%);}
-    80% {transform: translateX(-300%);}
-    100% {transform: translateX(-300%);}
+    30% {transform: translateX(-115%);}
+    50% {transform: translateX(-115%);}
+    55% {transform: translateX(-235%);}
+    75% {transform: translateX(-235%);}
+    80% {transform: translateX(-355%);}
+    100% {transform: translateX(-355%);}
 
 }
 
@@ -83,7 +83,7 @@ div.preco{
 .linha{
     position: absolute;
     top: 40.7rem;
-    left: 15.7rem;
+    left: 15.4rem;
     border: 1px solid red;
     width: 5rem;
 }
@@ -118,6 +118,7 @@ div.btn button{
     font-size: 30px;
     line-height: 36px;
     text-align: center;
+    color: black;
     cursor: pointer;
 }
 
