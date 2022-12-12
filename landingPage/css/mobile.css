@@ -80,6 +80,14 @@ div.preco{
     padding-left: .8rem;
 }
 
+.linha{
+    position: absolute;
+    top: 40.7rem;
+    left: 15.7rem;
+    border: 1px solid red;
+    width: 5rem;
+}
+
 .valor span{
     font-family: 'Inter';
     font-style: normal;
@@ -172,6 +180,8 @@ div.tempo{
 
 .btn a{
     width: 80%;
+    text-decoration: none;
+    color: black;
 }
 
 a{
