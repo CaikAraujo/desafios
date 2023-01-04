@@ -71,6 +71,17 @@ body{
     letter-spacing: 2px;
 }
 
+.validade2{
+    position: absolute;
+    top: 12.8rem;
+    left: 400px;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+
+
 .cvc1{
     position: absolute;
     top: 6.9rem;
