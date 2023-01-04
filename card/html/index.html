@@ -36,21 +36,25 @@
             <form action="#">
                 <div class="inputs">
                     <label class="name" for="name">Proprietario do Cartão</label>
-                    <input type="text" name="name" id="name" autocomplete="off" required placeholder="Caik Araujo" onchange="toggleButton()" onkeyup="escrevaName()">
+                    <input type="text" name="name" id="name" autocomplete="off" required placeholder="Caik Araujo" onchange="toggleButton()"  onkeyup="escrevaName()">
+                    <span id="blankName" class="aviso">Can`t be blank</span>
                 </div>
                 <div class="inputs">
                     <label class="number" for="number">Número do Cartão</label>
                     <input type="text" name="number" id="number" autocomplete="off" required placeholder="0000 0000 0000 0000" onchange="toggleButton()" maxlength="19" onkeyup="escrevaNum()">
+                    <span id="blankNum" class="aviso">Can´t be blank</span>
                 </div>
                 <div class="facts">
                     <div class="data">
                         <label class="label-date" for="date">EXP. Data(MM/YY)</label>
                         <input type="text" name="date" id="date" autocomplete="none" required placeholder="MM" onchange="toggleButton()" maxlength="2" onkeyup="escrevaData()">
                         <input type="text" name="date"  id="date2"  autocomplete="none" required placeholder="YY" onchange="toggleButton()" maxlength="2" onkeyup="escrevaDataAno()">
+                        <span id="blankDate" class="aviso">Can´t be blank</span>
                     </div>
                     <div class="cvc">
                         <label class="label-cvc" for="cvc2">CVC</label>
                         <input type="text" name="cvc" id="cvc2" autocomplete="none" required placeholder="e.g. 123" onchange="toggleButton()" maxlength="3" onkeyup="escrevaCvc()">
+                        <span id="blankCvc" class="aviso">Can´t be blank</span>
                     </div>
                 </div>
                 <div class="btn">
@@ -65,6 +69,9 @@
 
 
         <script>
+
+
+
             function toggleButton(){
                 const nome = document.querySelector('#name').value;
                 const numero = document.querySelector('#number').value;

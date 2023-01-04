@@ -124,16 +124,19 @@ label{
     left: -4px;
 }
 
+
 .number{
     position: absolute;
     top: 108px;
     left: -4px;
 }
 
+
 .inputs input:focus{
     border-image-source:linear-gradient( hsl(249, 99%, 64%) , hsl(278, 94%, 30%));
     border-image-slice: 1;
-}
+} 
+
 
 .facts{
     display: flex;
@@ -194,7 +197,7 @@ label{
 }
 
 .btn{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 button{
@@ -209,6 +212,15 @@ button{
 button:disabled{
     opacity: 0.4;
     cursor: default;
+}
+
+
+.aviso{
+    font-size: 11px;
+    display: none;
+    margin: 3px 0px 0px 3px;
+    position: absolute;
+
 }
 
 
